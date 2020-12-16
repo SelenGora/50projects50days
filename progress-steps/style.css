@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+}
+:root {
+  --theme-color-main: #f79f38;
+  --theme-color-filler: #e0e0e0;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  background-color: #f6f7fb;
+}
+.container {
+  text-align: center;
+}
+.progress-container {
+  display: flex;
+  margin-bottom: 30px;
+  justify-content: space-between;
+  width: 300px;
+  max-width: 100%;
+  position: relative;
+}
+.progress-container::before {
+  content: "";
+  background-color: var(--theme-color-filler);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  height: 4px;
+  width: 100%;
+  z-index: -1;
+}
+.progress {
+  background-color: var(--theme-color-main);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  height: 4px;
+  width: 0%;
+  z-index: -1;
+  transition: 0.4s ease;
+}
+.circle {
+  background-color: #fff;
+  color: #999;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid var(--theme-color-filler);
+  transition: 0.4s ease;
+}
+
+.circle.active {
+  border-color: var(--theme-color-main);
+}
+
+.btn {
+  background-color: var(--theme-color-main);
+  color: #fff;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: inherit;
+  padding: 8px 30px;
+  margin: 5px;
+  font-size: 14px;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn:focus {
+  outline: 0;
+}
+
+.btn:disabled {
+  background-color: var(--theme-color-filler);
+  cursor: not-allowed;
+}
