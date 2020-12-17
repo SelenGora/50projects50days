@@ -4,7 +4,7 @@
 }
 body {
   font-family: "Roboto", sans-serif;
-  background: url(/img.jpg);
+  background: url(/rotating-navigation/img/bg.jpg);
   background-repeat: repeat;
   overflow-x: hidden;
   margin: 0;
