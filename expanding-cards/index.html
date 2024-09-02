@@ -1,36 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
-  <link rel="stylesheet" href="style.css">
-  <title>Expanding Cards</title>
-</head>
-<body>
-  <div class="container">
-    <div class="panel" style="background-image: url(https://images.unsplash.com/photo-1607612957889-c8389d32e25b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80;)">
-      <h3>Schneezauber auf dem Berg Schauinsland Schwarzwald
-      </h3>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Expanding Cards</title>
+  </head>
+  <body>
+    <div class="container">
+      <div
+        class="panel"
+        style="
+          background-image: url(https://images.unsplash.com/photo-1607612957889-c8389d32e25b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80;);
+        "
+      >
+        <h3>Schneezauber auf dem Berg Schauinsland Schwarzwald</h3>
+      </div>
+      <div
+        class="panel active"
+        style="
+          background-image: url(https://images.unsplash.com/photo-1592512236278-96c074b87207?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2800&q=80);
+        "
+      >
+        <h3>Nógrád, Börzsöny, Hungary</h3>
+      </div>
+      <div
+        class="panel"
+        style="
+          background-image: url(https://images.unsplash.com/photo-1602771419163-f139753be189?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1652&q=80);
+        "
+      >
+        <h3>Hokkaidō, Japan</h3>
+      </div>
+      <div
+        class="panel"
+        style="
+          background-image: url(https://images.unsplash.com/flagged/photo-1585579047239-9471d8823b6e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2667&q=80);
+        "
+      >
+        <h3>Spring Blossom</h3>
+      </div>
+      <div
+        class="panel"
+        style="
+          background-image: url(https://images.unsplash.com/photo-1546805220-8638b5ff0d42?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2773&q=80);
+        "
+      >
+        <h3>Kronplatz, Italy</h3>
+      </div>
     </div>
-    <div class="panel active" style="background-image: url(https://images.unsplash.com/photo-1592512236278-96c074b87207?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2800&q=80)">
-      <h3>Nógrád, Börzsöny, Hungary
-      </h3>
-    </div>
-    <div class="panel" style="background-image: url(https://images.unsplash.com/photo-1602771419163-f139753be189?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1652&q=80)">
-      <h3>Hokkaidō, Japan
-      </h3>
-    </div>
-    <div class="panel" style="background-image: url(https://images.unsplash.com/flagged/photo-1585579047239-9471d8823b6e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2667&q=80)">
-      <h3>Spring Blossom
 
-      </h3>
-    </div>
-    <div class="panel" style="background-image: url(https://images.unsplash.com/photo-1546805220-8638b5ff0d42?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2773&q=80)">
-      <h3>Kronplatz, Italy
-      </h3>
-    </div>
-  </div>
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
