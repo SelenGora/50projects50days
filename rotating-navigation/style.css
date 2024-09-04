@@ -1,17 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
 * {
   box-sizing: border-box;
 }
 body {
-  font-family: "Roboto", sans-serif;
-  background: url(https://assets.worldofwarcraft.com/static/components/Pane/Pane-dirtDark.ea235926d6487091ac2d6786fd7d2615.jpg);
-  background-repeat: repeat;
+  font-family: "Lato", sans-serif;
   overflow-x: hidden;
   margin: 0;
+  background-color: #242424;
 }
 
 .container {
-  background-color: #242424;
+  background-color: #fff;
   transform-origin: top left;
   transition: transform 0.5s linear;
   width: 100vw;
@@ -30,28 +29,24 @@ body {
 }
 
 .circle {
-  background-color: #ea4c41;
-  height: 200px;
+  background: linear-gradient(180deg, #ffb54c 0%, #fad464 100%);
   width: 200px;
+  height: 200px;
   border-radius: 50%;
   position: relative;
-  transition: transform 0.5s linear;
-}
-
-.container.show-nav .circle {
-  transform: rotate(-70deg);
+  transition: transform 0.5 linear;
 }
 
 .circle button {
-  cursor: pointer;
   position: absolute;
   top: 50%;
   left: 50%;
   height: 100px;
-  background: transparent;
+  background-color: transparent;
   border: 0;
   font-size: 26px;
   color: #fff;
+  cursor: pointer;
 }
 
 .circle button:focus {
@@ -68,29 +63,62 @@ body {
   transform-origin: top left;
 }
 
-.container.show-nav + nav li {
-  transform: translateX(0);
-  transition-delay: 0.3s;
+.container.show-nav .circle {
+  transform: rotate(-70deg);
+}
+
+.content {
+  max-width: 1000px;
+  margin: 50px auto;
+}
+.content h1 {
+  margin: 0;
+}
+.content p {
+  color: #333;
+  line-height: 1.5;
+}
+.content img {
+  max-width: 100%;
+}
+
+.horizontal-line {
+  background: url(https://lds-img.finalfantasyxiv.com/promo/h/f/H6YDpPNux4ZP_wWX8XYU_Wu_3Y.png)
+    no-repeat center center;
+  background-size: 100% 12px;
+  display: block;
+  width: 100%;
+  height: 12px;
+  margin: 48px 0;
+  padding: 0;
+  border-style: none;
 }
 
 nav {
   position: fixed;
-  bottom: 40px;
-  left: 0;
-  z-index: 100;
+  bottom: 20px;
 }
 
 nav ul {
-  list-style-type: none;
+  list-style: none;
   padding-left: 30px;
 }
 
 nav ul li {
   text-transform: uppercase;
-  color: #fff;
-  margin: 30px 0;
+  margin: 40px 0;
+  color: #ffb54c;
   transform: translateX(-100%);
   transition: transform 0.4s ease-in;
+}
+
+nav ul li:nth-last-child(1) {
+  margin-bottom: 0;
+}
+
+nav ul li i {
+  margin-right: 10px;
+  font-size: 10px;
 }
 
 nav ul li + li {
@@ -103,39 +131,12 @@ nav ul li + li + li {
   transform: translateX(-200%);
 }
 
-.druid-color {
-  color: #ff7c0a;
+nav ul li + li + li + li {
+  margin-left: 45px;
+  transform: translateX(-250%);
 }
 
-.hunter-color {
-  color: #aad372;
-}
-
-.mage-color {
-  color: #68ccef;
-}
-
-.content img {
-  max-width: 100%;
-  margin: 40px 0;
-}
-
-.content {
-  max-width: 1000px;
-  margin: 50px auto;
-}
-
-.content h1 {
-  margin: 0;
-  color: #ffd100;
-}
-
-.content small {
-  color: #bbb;
-  font-style: italic;
-}
-
-.content p {
-  color: #bbb;
-  line-height: 1.5;
+.container.show-nav + nav li {
+  transform: translateX(0);
+  transition-delay: 0.3s;
 }
