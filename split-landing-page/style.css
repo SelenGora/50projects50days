@@ -51,7 +51,7 @@ body {
   top:20%;
   transform: translateX(-50%);
   white-space: nowrap;
-  font-size: 4rem;
+  font-size: 3rem;
 }
  .btn {
   position: absolute;
