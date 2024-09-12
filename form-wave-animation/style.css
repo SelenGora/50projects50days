@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Muli&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Muli", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  background-color: steelblue;
+}
+
+.container {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 30px;
+  border-radius: 5px;
+}
+
+.container h1 {
+  color: #fff;
+  text-align: center;
+}
+.text {
+  margin-top: 30px;
+}
+
+.text a {
+  text-decoration: none;
+  color: steelblue;
+}
+
+.btn {
+  cursor: pointer;
+  background-color: lightblue;
+  font-family: inherit;
+  display: inline-block;
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  border: 0;
+  border-radius: 5px;
+}
+
+.btn:focus {
+  outline: 0;
+  transform: scale(0.98);
+}
+
+.form-container {
+  position: relative;
+  width: 300px;
+  margin: 20px 0 40px;
+}
+
+.form-container input {
+  background: transparent;
+  border: 0;
+  border-bottom: 2px solid rgb(255, 255, 255);
+  width: 100%;
+  display: block;
+  padding: 15px 0;
+  font-size: 18px;
+  color: #fff;
+}
+
+.form-container input:focus {
+  border: 1px dotted rgba(255, 255, 255, 0.3);
+}
+
+.form-container input:focus,
+.form-container input:valid {
+  outline: none;
+  border-bottom-color: lightblue;
+  
+}
+
+.form-container label {
+  color: #fff;
+}
+
+.form-container label {
+  position: absolute;
+  top: 15px;
+  left: 0;
+}
+
+.form-container label span {
+  display: inline-block;
+  font-size: 18px;
+  min-width: 5px;
+  /*
+  The cubic-bezier() function defines a Cubic Bezier curve.
+
+  A Cubic Bezier curve is defined by four points P0, P1, P2, and P3. P0 and P3 are the start and the end of the curve and,
+  in CSS these points are fixed as the coordinates are ratios. 
+  P0 is (0, 0) and represents the initial time and the initial state, P3 is (1, 1) and represents the final time and the 
+  final state.
+
+  The cubic-bezier() function can be used with the animation-timing-function property and the transition-timing-function property. 
+  */
+  transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.form-container input:focus + label span,
+.form-container input:valid + label span {
+  color: lightblue;
+  transform: translateY(-30px);
+}
+

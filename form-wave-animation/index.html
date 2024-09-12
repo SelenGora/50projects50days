@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <title>Form Wave Animation</title>
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <h1>Please Login</h1>
+        <div class="form-container">
+          <input type="text" required />
+          <label>Email</label>
+          <!-- 
+          -- Right above label will eventually turn into below spans to simulate wave effect 
+              We will achieve this by creating labels and their styles with vanilla JS
+          <label>
+            <span style="transition-delay: 0ms">E</span>
+            <span style="transition-delay: 50ms">m</span>
+            <span style="transition-delay: 100ms">a</span>
+            <span style="transition-delay: 150ms">i</span>
+            <span style="transition-delay: 200ms">l</span>
+          </label>
+          -->
+        </div>
+        <div class="form-container">
+          <input type="password" required/>
+          <label>Password</label>
+        </div>
+        <button class="btn">Login</button>
+        <div class="text">
+          Don't have an account? <a href="#">Register</a>
+        </div>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
